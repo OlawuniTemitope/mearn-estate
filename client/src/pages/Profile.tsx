@@ -156,6 +156,7 @@ export default function Profile() {
         prev.filter((listing) => listing._id !== listingId)
       );
     } catch (error) {
+            // @ts-expect-error err can be unkown
       console.log(error.message);
     }
   };
